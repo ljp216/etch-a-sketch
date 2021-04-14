@@ -1,13 +1,12 @@
 
 #container {
-    margin-right: 511px;
-    margin-left: 511px;
-    border: 1px solid black;
-    text-align: center;
+    max-width: 500px;
+    min-height: 500px;
     display: grid;
-    justify-content: center;
-    grid-template-columns: 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
-    grid-template-rows: 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+    margin: 2rem auto;
+    grid-template-columns: repeat(16,1fr);
+    box-sizing: border-box;
+    border: black solid 2px;
   }
   h1{
       text-align: center;
@@ -17,4 +16,6 @@
       text-align: center;
       padding: 15px;
   }
+
+
 
