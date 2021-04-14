@@ -15,8 +15,11 @@ const clear = () => {
     squares.forEach(item => item.style.backgroundColor = '#ffffff')
 }
 const howMany = () => {
-    let gridSize = Number(prompt('How Many?'));
+    let gridSize = Number(prompt('How large would you like your grid?'));
     container.innerHTML = ''
+    if(gridSize > 100){
+        gridSize = Number(prompt('Please choose a number smaller than 100'));
+    }
     for (var i = 0; i < gridSize * gridSize; i++) {
         const gridSquare = document.createElement('div')
         gridSquare.classList = "grid";
